@@ -1,6 +1,6 @@
 # Fast R-CNN
 
-<div style="text-align : right;">이정수</div>
+
 
 
 
@@ -15,16 +15,18 @@
   * Object Detection 속도가 느림
 
   
+<br/>
 
 - Fast R-CNN은 처리 플로우를 하나의 모델로 통합해 end-to-end 학습이 가능함
 
 - 그 결과 학습 속도, 추론 속도, 정확도 모두 향상시켰다는데 의의가 있음
 
 
+<br/>
 
 - Flow
 
-  1. Selective Search를 사용해 RoI**(좌표)**를 선별
+  1. Selective Search를 사용해 RoI **(좌표)** 를 선별
 
   2. 전체 이미지를 미리 학습된 CNN에 통과시켜 feature map 추출(SPP Net과 동일)
 
@@ -41,6 +43,7 @@
      <img src="images/flow.png" alt="roi1" style="zoom: 200%;" />
 
 
+<br/>
 
 - Methods
 
@@ -83,8 +86,8 @@
 
   
 
+  <br/>
   
-
   * Loss function
 
     ![loss](images/loss.png)
@@ -102,6 +105,7 @@
 
 
 
+<br/>
 
 * Contributions
 
@@ -114,6 +118,7 @@
   * Memory : 기존 모델은 CNN에서 나온 2000개의 feature map을 Disk에 넣고 SVM을 사용할때 불러오는 방법이었으나 더 이상 필요 없어짐
 
     
+<br/>
 
 * 한계
 
